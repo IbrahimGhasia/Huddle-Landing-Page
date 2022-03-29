@@ -15,7 +15,7 @@ body {
 	font-size: 1.4em;
 	align-items: center;
 	justify-content: center;
-	min-height: 100vh;
+	/* min-height: 100vh; */
 }
 
 .logo {
@@ -98,7 +98,11 @@ button:hover {
 	border-color: hsl(300, 69%, 71%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+	body {
+		background-image: url(./images/bg-mobile.svg);
+	}
+
 	.flex {
 		flex-direction: column;
 		margin: 50px 0;
